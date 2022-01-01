@@ -1,5 +1,11 @@
 import { Link } from 'remix';
 
+export const headers = () => {
+  return {
+    "Cache-Control": "public, max-age=300, s-maxage=3600",
+  };
+};
+
 export default function Index() {
   return (
     <div style={{ fontFamily: "system-ui, sans-serif", lineHeight: "1.4" }}>

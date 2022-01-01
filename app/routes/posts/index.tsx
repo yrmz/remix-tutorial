@@ -5,6 +5,12 @@ export type Post = {
   title: string;
 };
 
+export const headers = () => {
+  return {
+    "Cache-Control": "public, max-age=300, s-maxage=3600",
+  };
+};
+
 export const loader = () => {
   const posts: Post[] = [
     {
